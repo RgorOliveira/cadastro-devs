@@ -4,9 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Cadastro de DEVs</h1>
+        <p>Complete o cadastro</p>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <div>
+                    <label>Nome</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div>
+                    <label>Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome">
+                </div>  
+            </fieldset>
+
+            <div id="div-email">
+                <label>Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div id="div-input-dev">
+                <label>De qual lado da aplicação você desenvolve?</label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                </label>
+            </div>
+
+            <div>
+                <label>Senioridade</label>
+                <select name="senioridade" id="senioridade">
+                    <option value="" selected disabled>Selecione</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Pleno">Pleno</option>
+                    <option value="Senior">Senior</option>
+                </select>
+            </div>
+
+            <fieldset>
+                <div>
+                    <label>Selecione as tecnologias que ultiliza:</label><br>
+                    
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                    <label for="tecnologia1">HTML</label>
+                    
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                    <label for="tecnologia2">CSS</label>
+
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                    <label for="tecnologia3">JavaScript</label>
+
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Python">
+                    <label for="tecnologia4">Python</label>
+
+                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="Java">
+                    <label for="tecnologia5">Java</label>
+
+                    <input type="checkbox" id="tecnologia6" name="tecnologia6" value="PHP">
+                    <label for="tecnologia6">PHP</label>
+
+                    <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Outro">
+                    <label for="tecnologia5">Outro</label>
+                </div>
+            </fieldset>
+
+            <div>
+                <label>Conte um pouco sobre sua experiencia:</label>
+                <textarea name="experiencia" id="experiencia" cols="30" rows="6"></textarea>
+            </div>
+
+            <button type="submit" id="botao-concluir">Concluir</button>
+        </form>
+    </main>
+    <footer>
+        <p>Site criado por <a href="https://github.com/rgoroliveira" target="_blank">RgorOliveira</a></p>
+    </footer>
 </body>
 </html>

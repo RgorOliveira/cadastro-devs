@@ -14,25 +14,41 @@
 }
 
 body {
-    background-color: var(--cor2);
+    background-color: var(--cor5);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     color: var(--cor3);
-    margin-left: 36%;
-    margin-top: 2%;
-    justify-content: center;
+    margin: 0px;
+}
+
+main {
+    background-color: white;
+
+    max-width: 470px;
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 1px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main div {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #titulo {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--cor1);
-    margin-left: 7%;
+    text-align: center;
+    padding: 10px;
 }
 
 #subtitulo {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--roxinha);
-    margin-left: 10%;
+    text-align: center;
+    padding: 7px;
 }
 
 fieldset{
@@ -54,10 +70,6 @@ input, select, textarea, button {
     clear: both;
 }
 
-.campo {
-    margin-bottom: 1em;
-}
-
 .campo label {
     margin-bottom: 0.2em;
     color: var(--cor3);
@@ -66,13 +78,13 @@ input, select, textarea, button {
 
 fieldset.grupo .campo {
     float: left;
-    margin-right: 1em;
 }
 
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
     padding: 0.2em;
     border: 1px solid var(--cor3);
     display: block;
+    margin-right: 10px;
 }
 
 .campo select option {
@@ -87,16 +99,10 @@ fieldset.grupo .campo {
     font-size: 1.2em;
     background: var(--cor3);
     border: 0;
-    margin-bottom: 1em;
     color: #ffffff;
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
 }
 
 #botao:hover {
@@ -109,21 +115,24 @@ fieldset.grupo .campo {
     display: inline-block;
 }
 
+#check label {
+    margin-right: 10px;
+}
+
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
+    bottom: 0px;
+    text-align: center;
+    padding: 7px;
+    background-color: black;
+    
 }
 
 footer p {
-    margin-left: 7%;
-    color: black;
+    color: white;
 }
 
 footer a {
     text-decoration: none;
-    color: black;
     font-weight: bolder;
 }
 
